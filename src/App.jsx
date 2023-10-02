@@ -1,12 +1,11 @@
-import "./App.css";
-import Episodes from "./components/Episodes.jsx";
+import Episodes from './components/Episodes.jsx';
 
 function App() {
-   return (
-      <>
-         <Episodes />
-      </>
-   );
+  return (
+    <>
+      <Episodes />
+    </>
+  );
 }
 
 export default App;

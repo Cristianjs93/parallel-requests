@@ -1,0 +1,33 @@
+.episode-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid rgb(159, 158, 158);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(217, 217, 217, 0.75);
+  background-color: #f1f1f1;
+}
+
+.characters-container {
+  padding: 10px 20px;
+  border: 1px solid rgb(177, 177, 177);
+  border-radius: 5px;
+  background-color: #dadada;
+}
+
+.characters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 30px;
+}
+
+.character-info {
+  list-style: decimal;
+  font-size: 15px;
+}
+
+span {
+  font-weight: 400;
+}

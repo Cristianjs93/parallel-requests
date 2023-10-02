@@ -1,11 +1,9 @@
-.characters-box {
-   padding: 10px 20px;
-   margin-bottom: 50px;
-   border: 1px solid rgb(177, 177, 177);
-   border-radius: 5px;
-   background-color: rgb(240, 240, 240);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-span {
-   font-weight: 400;
+#root {
+  padding: 20px;
 }
