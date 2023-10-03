@@ -1,4 +1,4 @@
-import Episodes from './components/Episodes.jsx';
+import Episodes from './components/Episodes/Episodes';
 
 function App() {
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/episodeCard.css';
+import './episodeCard.css';
 
-const EpisodeCard = ({ EpisodesWithCharacters }) => {
+const EpisodeCard = ({ episodesWithCharacters }) => {
   return (
     <>
-      {EpisodesWithCharacters.map((episode) => (
+      {episodesWithCharacters.map((episode) => (
         <div key={episode.id} className='episode-card'>
           <h2>
             {episode.id}. {episode.name} - {episode.episode}

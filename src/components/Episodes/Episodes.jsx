@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import EpisodeCard from './EpisodeCard';
+import EpisodeCard from '../EpisodeCard/EpisodeCard';
 import axios from 'axios';
-import { getEpisodesWithCharacters } from '../utils';
-import '../styles/episodes.css';
+import { getEpisodesWithCharacters } from '../../utils';
+import './episodes.css';
 
 const EPISODES_URL = 'https://rickandmortyapi.com/api/episode';
 
@@ -44,35 +44,14 @@ const Episodes = () => {
 
   const urls = Array.from(firstTenCharactersUrl);
 
-  const EpisodesWithCharacters = getEpisodesWithCharacters(
+  const episodesWithCharacters = getEpisodesWithCharacters(
     episodes,
     characters
   );
 
   return (
     <div className='card-container'>
-      <EpisodeCard EpisodesWithCharacters={EpisodesWithCharacters} />
-      {/* {EpisodesWithCharacters.map((episode) => (
-        <div key={episode.id}>
-          <h2>
-            {episode.id}. {episode.name} - {episode.episode}
-          </h2>
-          <h2>
-            Fecha al aire: <span>{episode.air_date}</span>
-          </h2>
-          <h2>Personajes:</h2>
-          <div className='characters-box'>
-            <code>
-              {episode.characters.map((character) => (
-                <p key={character.id}>
-                  {' '}
-                  - {character.name} - {character.species}
-                </p>
-              ))}
-            </code>
-          </div>
-        </div>
-      ))} */}
+      <EpisodeCard episodesWithCharacters={episodesWithCharacters} />
     </div>
   );
 };
